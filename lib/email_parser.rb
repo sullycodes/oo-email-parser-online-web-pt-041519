@@ -21,29 +21,29 @@ class EmailParser
     my_parse
   end
 
-  def parse_1
-      email_arr = @emails.split(",")
-      email_arr.each do |e|
-        e.lstrip!
-      end
-  end
+  # def parse_1
+  #     email_arr = @emails.split(",")
+  #     email_arr.each do |e|
+  #       e.lstrip!
+  #     end
+  # end
 
-  def parse_2
-    email_arr = @emails.split(" ")
-    email_arr.each do |e|
-        e.lstrip!
-    end
-  end
+  # def parse_2
+  #   email_arr = @emails.split(" ")
+  #   email_arr.each do |e|
+  #       e.lstrip!
+  #   end
+  # end
 
-  def parse_3
-    email_arr = @emails.delete(",").split(" ")
-    email_arr.each do |e|
-        e.lstrip!
-    end
-  end
+  # def parse_3
+  #   email_arr = @emails.delete(",").split(" ")
+  #   email_arr.each do |e|
+  #       e.lstrip!
+  #   end
+  # end
 
-  def parse_4
-    @emails.delete(",").split(" ").uniq
-  end
+  # def parse_4
+  #   @emails.delete(",").split(" ").uniq
+  # end
 
 end
