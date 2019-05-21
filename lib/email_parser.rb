@@ -4,20 +4,21 @@ class EmailParser
     @emails = emails
   end
 
-def my_parse(split_char, delete = "nil")
-    if split_char == "," && delete == "duplicates"
-      parse_4
-    elsif split_char == " " && delete == ","
-      parse_3
-    elsif split_char == " "
-      parse_2
-    elsif split_char == ","
-      parse_1
-    end
-end
+# def my_parse(split_char, delete = "nil")
+#     if split_char == "," && delete == "duplicates"
+#       parse_4
+#     elsif split_char == " " && delete == ","
+#       parse_3
+#     elsif split_char == " "
+#       parse_2
+#     elsif split_char == ","
+#       parse_1
+#     end
+# end
 
 
   def parse
+    my_parse
   end
 
   def parse_1
